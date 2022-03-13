@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet" />
+    <title>Calculadora_Veronica_Duque_Duarte</title>
+</head>
+<body>
+    
+    <div class="container" data-theme-container>
+        <div class="calculadora-container">
+            <div class="display-label-container">
+                <h2>Calc</h2>
+                <div class="display-labels-two">
+                    <h4>THEME</h4>
+                    <div class="display-labels contenedor-titulo-controles">
+                        <div class="labels">
+                            <label for="">1</label>
+                        <label for="">2</label>
+                        <label for="">3</label>
+                        </div>
+                        <div class="indicadores">
+                            <button id="btnBlueMode"></button>
+                            <button id="btnLightMode"></button>
+                            <button id="btnPurpleMode"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display" data-theme-display>
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>  
+            <div class="calculadora" data-theme-calculator>
+                
+                
+                
+            <button class="numero" data-theme-number>7</button>
+            <button class="numero" data-theme-number>8</button>
+            <button class="numero" data-theme-number>9</button>
+            <button onclick="display.borrar()" data-theme-operator-delete>DEL</button>
+            <button class="numero" data-theme-number>4</button>
+            <button class="numero" data-theme-number>5</button>
+            <button class="numero" data-theme-number>6</button>
+            <button class="operador"  value="sumar" data-theme-number>+</button>
+            <button class="numero" data-theme-number>1</button>
+            <button class="numero" data-theme-number>2</button>
+            <button class="numero" data-theme-number>3</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero" data-theme-number>.</button>
+            <button class="numero" data-theme-number>0</button>
+            <button class="operador" value="dividir" data-theme-number>/</button>
+            <button class="operador" value="multiplicar" data-theme-number>X</button>
+            <button class="col-2" onclick="display.borrarTodo()" data-theme-operator-delete>RESET</button>
+            <button class="operador col-2" value="igual" data-theme-operator-equal>=</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="scripts/display.js" type="text/javascript"></script>
+    <script src="scripts/calcular.js" type="text/javascript"></script>
+    <script src="scripts/index.js" type="text/javascript" defer></script>
+    <script src="scripts/tema.js"></script>
+</body>
+</html>
